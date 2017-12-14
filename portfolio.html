@@ -5,10 +5,10 @@
       type="image/favicon.png" 
       href="/images/favicon.png">
 		<meta charset="utf-8">
-		<meta name="description" content="Free Web tutorials">
-<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-<meta name="author" content="Hege Refsnes">
-		<title>Home</title>
+		<meta name="description" content="Where I was able to create a game with my partner">
+<meta name="keywords" content="Block Coding, app inventor">
+<meta name="author" content="Jacob Becerra">
+		<title>Portolio</title>
 	</head>
 	<style type="text/css">
 		body {
@@ -22,31 +22,63 @@
     a {
     color: cyan;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.navbar {
     overflow: hidden;
     background-color: #333;
+    font-family: Arial;
 }
 
-li {
+.navbar a {
     float: left;
-}
-
-li a {
-    display: block;
+    font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
-h2 {
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
     text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
   </style>
     <!DOCTYPE html>
@@ -55,13 +87,20 @@ h2 {
 </div>
     </html>
   	<body>
-<ul>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="portfolio.html">Portfolio</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="about.html">About</a></li>
-    <li><a href="python.html">Python</a></li>
-</ul>
+<div class="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Portfolio 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="portfolio.html">App Inventor: Can Attack </a>
+      <a href="python.html">Interactive Fiction: Adventures of Max</a>
+    </div>
+  </div> 
+</div>
 		<h1>Portfolio</h1>
 		<img src="images/Awesome Pic.jpg" height="500">
 	</body>
@@ -72,6 +111,9 @@ h2 {
 <p>I will be showing you an app that I helped make, it’s called can attack. When the app starts you can see the brading screen for a couple seconds and then it cuts to the main menu. When you press the play button the game starts, you can really win other than set a high score. When you press the about button it tells you how to play the game, when you shoot the good cans you will lose the game and when you shoot the bad cans, you will again a point. So now you can go back and press play, there will be three cans on your screen. They will cycle through all varieties of cans and if you press the bad cans you will see you score on the top left corner of the screen, there’s really no limit so you could possibly challenge your friends and tell them to beat your score if you record it somewhere. On the top right of the screen there is a pause button that gives you two options, to resume of go back to the main menu. Once you press a good can you will get a game over and be given two options, restart or go back to the main menu. If you press on the main menu you will get a notifier asking if you are sure. If you press on the restart button it will restart and play normally. Once you are finished with your playing session you can quit any time you’d like, just press the pause button or tap on a good can to get a game over and you can choose the main menu option and then you are done playing.</p>
 <h2>Trial and Error</h2>
 <p1>My partner and I created an app called can attack. The purpose of the game is to shoot the bad cans, if you shoot one of the good cans you’ll lose the game and would have to start over. The process of making a game varies from the amount of experience you have. My partner and I are still getting to know how some of the game mechanics work so we ran into an error involving the placements of the image sprites. Every time after the phone would turn on after shutting down on the app, the image sprites would shift to the left, messing up the x positioning of the sprites. So we had to come up with an equation that would keep the images at a default position once the app is started up after being locked. Once we had figured out an equation to keep the sprites in one spot we had put the code into a procedure and put it in a timer block, the timer block is active as long as someone is playing the game so it made it convenient for us to put the x positioning code in the timer block. Now the blocks go back to where they belong even after the phone or tablet has been locked.</p>
+<a href="games/CanAttack.apk">Download it for your andriod phone!</a>
+<br>
+<a href="games/CanAttack.aia">Source code for App Inventor</a>
 </html>
 <style type="text/css">
 body {

@@ -5,9 +5,9 @@
       type="image/favicon.png" 
       href="/images/favicon.png">
 		<meta charset="utf-8">
-		<meta name="description" content="Free Web tutorials">
-<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-<meta name="author" content="Hege Refsnes">
+		<meta name="description" content="Displaying what my partner and I created on our python project">
+<meta name="keywords" content="Python, repl.it">
+<meta name="author" content="Jacob Becerra">
 		<title>Python Project</title>
 	</head>
 	<style type="text/css">
@@ -19,28 +19,63 @@
 	 a {
     color: cyan;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.navbar {
     overflow: hidden;
     background-color: #333;
+    font-family: Arial;
 }
 
-li {
+.navbar a {
     float: left;
-}
-
-li a {
-    display: block;
+    font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 	</style>
 <!DOCTYPE html>
@@ -49,19 +84,33 @@ li a:hover {
 </div>
 </html>
 	<body>
-<ul>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="portfolio.html">Portfolio</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="python.html">Python</a></li>
-</ul>
+	    
+<div class="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Portfolio 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="portfolio.html">App Inventor: Can Attack </a>
+      <a href="python.html">Interactive Fiction: Adventures of Max</a>
+    </div>
+  </div> 
+</div>
 		<h1>Python Project Diagram</h1>
+	<script type="text/javascript" language="javascript" src="https://app.creately.com/player/creately-player.js"></script>
+<div id="creately-container-ja1e14xe1"></div>
+<script type="text/javascript">
+var player = new CreatelyPlayer( "creately-container-ja1e14xe1", "ja1e14xe1-rUjF0pakL54P7Jg0QVbwlAp0KQQ=", { width: "1015px", height: "1000px", showSharing: false });
+</script>
+<p>I ran into some problems with the coding on repl.it, didn't know how to create and run functions so all I did was asked my partner about and he helped me. Other than that I didn't have any other problems with my coding. </p>
 	</body>
 </html>
 <style type="text/css">
 	body {
-    background-image: url("images/night.jpg");
+    background-image: url("images/bigg.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
@@ -71,4 +120,7 @@ li a:hover {
 	h1 {
     color: white;
 }
+    p {
+        color:cyan;
+    }
 </style>
